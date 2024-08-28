@@ -1,105 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Barbershopo</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="main-header">
-                <nav class="header-wrapper">
-                    <ul class="header-list">
-                        <li class="header-item">
-                            <a class="header-link" href="#">ГЛАВНАЯ</a>
+                <nav class="header__wrapper">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link" href="#">ГЛАВНАЯ</a>
                         </li>
-                        <li class="header-item">
-                            <a class="header-link" href="#">НАШИ РАБОТЫ</a>
+                        <li class="header__item">
+                            <a class="header__link" href="#">НАШИ РАБОТЫ</a>
                         </li>
-                        <li class="header-item">
-                            <a class="header-link" href="#">ЗАПИСАТЬСЯ</a>
-                        </li class="header-item">
-                        <li class="header-item">
-                            <a class="header-link" href="#">КОНТАКТЫ</a>
+                        <li class="header__item">
+                            <a class="header__link" href="#">ЗАПИСАТЬСЯ</a>
+                        </li class="header__item">
+                        <li class="header__item">
+                            <a class="header__link" href="#">КОНТАКТЫ</a>
                         </li>
-                        <li class="header-item">
-                            <a class="header-link" href="#">HTML ACADEMY</a>
+                        <li class="header__item">
+                            <a class="header__link" href="#">HTML ACADEMY</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="login">
-                    <a href="#" class="open"><img src="/img/login icon.svg">ВОЙТИ</a>
+                    <img src="/img/login-icon.svg" alt="лого">
+                    <a href="#" class="open">ВОЙТИ</a>
                 </div>
             </div>
         </div>
-      </header>
-      <div class="logo-beard">
-        <img class="logo-beard_img" src="/img/logo.svg" alt="">
-      </div>
-      
-      
-      <main class="main" >
+
+    </header>
+    <div class="logo-beard">
+        <img class="logo-beard__img" src="/img/logo.svg" alt="">
+    </div>
+
+    <main class="main">
         <div class="container">
-                <div class="main-all">
-                    <div class="main-left">
-                        <h2 class="static">Стрижка у нас это выгодно!</h2>
-                        <span class="static-info">Мужская стрижка требует точного подхода. Обратимся к статистике:</span>
-                        <span class="static-false">* — приведённые данные ложь</span>
-                    </div>
-                    
-                    <div class="main-right">
-                        <div class="statistics">
-                            <span class="numbers-block">1500* <p class="numbers-item"> рублей вложений</p></span>
-                            <span class="numbers-block">7 200 <p class="numbers-item">секунд времени мастера </p> </span>
-                            <span class="numbers-block">90 000 <p class="numbers-item">постриженных волос</p> </span>
-                            <span class="numbers-block">500 000* <p class="numbers-item"> лайков и комплиментов </p></span>
-                        </div>
+            <div class="main-all">
+                <div class="main-left">
+                    <h2 class="static">Стрижка у нас это выгодно!</h2>
+                    <span class="static-info">Мужская стрижка требует точного подхода. Обратимся к статистике:</span>
+                    <span class="static-false">* — приведённые данные ложь</span>
+                </div>
+                <div class="statistics">
+                    <p class="numbers-block">1500* <span class="numbers-item"> рублей вложений</span></p>
+                    <p class="numbers-block">7 200 <span class="numbers-item">секунд времени мастера </span> </p>
+                    <p class="numbers-block">90 000 <span class="numbers-item">постриженных волос</span> </p>
+                    <p class="numbers-block">500 000* <span class="numbers-item"> лайков и комплиментов </span></p>
+                </div>
+            </div>
+
+            <div class="description">
+                <div class="description__wrapper-foot">
+                    <img src="/img/desc-icon1.svg" alt="#" class="description-img">
+                    <div class="description__text">
+                        <h2 class="description__title">БЫСТРО</h2>
+                        <p class="description__span">Мы делаем свою работу быстро!
+                            Два часа пролетят незаметнои вы — счастливый
+                            обладатель стильной стрижки-минутки</p>
                     </div>
                 </div>
-
-                <div class="description">
-                    <div class="description-wrapper">
-                        <div class="description-wrapper_foot">
-                            <img src="/img/desc-icon1.svg" alt="#" class="description-img">
-                            <div class="description-text">
-                                <h2 class="description-title">БЫСТРО</h2>
-                                <span class="description-span">Мы делаем свою работу быстро!
-                                    Два часа пролетят незаметнои вы — счастливый
-                                     обладатель стильной стрижки-минутки</span>
-                            </div>
-                        </div>
-                        <div class="description-wrapper_foot">
-                            <img src="/img/desc-icon2.svg" alt="#" class="description-img">
-                            <div class="description-text">
-                                <h2 class="description-title">КРУТО</h2>
-                                <span class="description-span">Забудьте, как вы стриглисьраньше.
-                                     Мы сделаем из васзвезду футбола или кино.
-                                    Во всяком случае внешне.</span>
-                            </div>
-                        </div>
-                        <div class="description-wrapper_foot">
-                            <img src="/img/desc-icon3.svg" alt="#" class="description-img">
-                            <div class="description-text">
-                                <h2 class="description-title">ДОРОГО</h2>
-                                <span class="description-span">Наши мастера — профессионалысвоего
-                                     дела не могут стоить дёшево
-                                     К тому же, разве цена не даёт определённый статус?</span>
-                            </div>
-                        </div>
-
+                <div class="description__wrapper-foot">
+                    <img src="/img/desc-icon2.svg" alt="#" class="description-img">
+                    <div class="description__text">
+                        <h2 class="description__title">КРУТО</h2>
+                        <p class="description__span">Забудьте, как вы стриглись раньше.
+                            Мы сделаем из васзвезду футбола или кино.
+                            Во всяком случае внешне.</p>
                     </div>
                 </div>
-
+                <div class="description__wrapper-foot">
+                    <img src="/img/desc-icon3.svg" alt="#" class="description-img">
+                    <div class="description-text">
+                        <h2 class="description__title">ДОРОГО</h2>
+                        <p class="description__span">Наши мастера — профессионалы своего
+                            дела не могут стоить дёшево
+                            К тому же, разве цена не даёт определённый статус?</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
+    <div class="news">
+        <div class="container">
+            <div class="news__title">
+                <h1 class="news__title-text">НОВОСТИ И АКЦИИ</h1>
+                <button class="news-button">ПОКАЗАТЬ ВСЕ</button>
+            </div>
+            <div class="news__item"></div>
+        </div>
+    </div>
 
-      <script src="js/main.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
