@@ -65,7 +65,8 @@ body {
     color: #fff;
     background-color: #292929;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-image: url(/img/back-fon.jpg);
 }
 
 .main-header {
@@ -384,6 +385,7 @@ body {
 .swiper-pagination {
     position: relative;
     padding-top: 42px;
+    color: #000;
 }
 
 .slider__img {
@@ -396,6 +398,12 @@ body {
 .swiper-button-prev:after,
 .swiper-button-next:after {
     content: none;
+}
+
+.swiper-pagination-bullet {
+    background-color: #353535;
+    border: 1px solid;
+    clip-path: polygon(50% 0%, 100% 51%, 50% 100%, 0% 50%);
 }
 
 
@@ -499,6 +507,10 @@ body {
 
 @media (max-width: 768px) {
 
+    body {
+        background-size: auto;
+    }
+
     .main-header {
         justify-content: center;
         align-items: center;
@@ -519,8 +531,8 @@ body {
 
     .main-all {
         display: block;
-        margin-left: 20px;
-        transform: translateY(-45%);
+        margin-left: 33px;
+        transform: translateY(-40%);
     }
 
     .main-left {
@@ -558,7 +570,7 @@ body {
     }
 
     .description__title {
-        margin: 26px 32px 0;
+        margin: 30px 32px 0;
         font-size: 30px;
         text-align: start;
     }
@@ -588,21 +600,22 @@ body {
     }
 
     .slider__img {
-        width: 98px;
-        height: 98px;
-        transform: translate(27%, 32%);
+        width: 80px;
+        height: 80px;
+        transform: translate(45%, 32%);
+
         overflow: hidden;
     }
 
     .swiper-button-next {
         height: 160px;
-        transform: translate(-88%, -54%);
+        transform: translate(-147%, -42%);
     }
 
     .swiper-button-prev {
-        transform: translate(15%, -37%);
+        transform: translate(-8%, -42%);
         height: 160px;
-        margin-left: 13px;
+        margin-left: 57px;
     }
 
     .reviews-slider__title {
@@ -612,6 +625,16 @@ body {
     .reviews-slider__subtitle {
         padding-left: 100px;
         max-width: 345px;
+    }
+
+    .swiper-pagination {
+        transform: translateY(-2px);
+        padding: 0;
+        max-width: 126px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #F8F5F2;
     }
 
     .news__title {
@@ -650,6 +673,9 @@ body {
 
     .footer__social-tablet {
         display: flex;
+        max-width: 640px;
+        padding-left: 51px;
+
     }
 
     .static-false__tablet {
@@ -662,6 +688,10 @@ body {
         font-size: 20px;
         font-weight: 400;
         max-width: 270px;
+    }
+
+    .footer__number {
+        margin-left: 60px;
     }
 
 
@@ -693,8 +723,11 @@ body {
         background-position: center;
     }
 
+    .footer__job {
+        padding-left: 70px;
+    }
+
     .footer__item {
-        justify-content: space-between;
         padding-bottom: 31px;
     }
 
