@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Barbershopo</title>
 </head>
@@ -19,16 +20,16 @@
                 <nav class="header__wrapper">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a class="header__link" href="#">ГЛАВНАЯ</a>
+                            <a class="header__link" href="#">HOME</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#">НАШИ РАБОТЫ</a>
+                            <a class="header__link" href="#">OUR WORK</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#">ЗАПИСАТЬСЯ</a>
+                            <a class="header__link" href="#">SIGN UP</a>
                         </li class="header__item">
                         <li class="header__item">
-                            <a class="header__link" href="#">КОНТАКТЫ</a>
+                            <a class="header__link" href="#">CONTACTS</a>
                         </li>
                         <li class="header__item">
                             <a class="header__link" href="#">HTML ACADEMY</a>
@@ -37,11 +38,10 @@
                 </nav>
                 <div class="login">
                     <img src="/img/login-icon.svg" alt="лого">
-                    <a href="#" class="open">ВОЙТИ</a>
+                    <a href="#" class="open">LOGIN</a>
                 </div>
             </div>
         </div>
-
     </header>
     <div class="logo-beard">
         <img class="logo-beard__img" src="/img/logo.svg" alt="">
@@ -51,44 +51,55 @@
         <div class="container">
             <div class="main-all">
                 <div class="main-left">
-                    <h2 class="static">Стрижка у нас это выгодно!</h2>
-                    <span class="static-info">Мужская стрижка требует точного подхода. Обратимся к статистике:</span>
-                    <span class="static-false">* — приведённые данные ложь</span>
+                    <h2 class="static">Getting a haircut with us is profitable!</h2>
+                    <p class="static-info">Men's haircuts require a precise approach. Let's look at the
+                        statistics:</p>
+                    <p class="static-false">* — the given data is false</p>
+                </div>
+                <div class="main-left__tablet">
+                    <div class="main-left__tablet-text">
+                        <h2 class="static__tablet">Getting a haircut with us is profitable!</h2>
+                        <p class="static-false__tablet">* — the given data is false</p>
+                    </div>
+                    <div class="main-right__tablet-text">
+                        <p class="static-info__tablet">Men's haircuts require a precise approach. Let's look at the
+                            statistics:</p>
+                    </div>
                 </div>
                 <div class="statistics">
-                    <p class="numbers-block">1500* <span class="numbers-item"> рублей вложений</span></p>
-                    <p class="numbers-block">7 200 <span class="numbers-item">секунд времени мастера </span> </p>
-                    <p class="numbers-block">90 000 <span class="numbers-item">постриженных волос</span> </p>
-                    <p class="numbers-block">500 000* <span class="numbers-item"> лайков и комплиментов </span></p>
+                    <p class="numbers-block">1500* <span class="numbers-item"> rubles of investment</span></p>
+                    <p class="numbers-block">7 200 <span class="numbers-item">seconds of master time </span> </p>
+                    <p class="numbers-block">90 000 <span class="numbers-item">cut hair</span> </p>
+                    <p class="numbers-block">500 000* <span class="numbers-item"> likes and compliments </span></p>
                 </div>
             </div>
 
             <div class="description">
                 <div class="description__wrapper-foot">
-                    <img src="/img/desc-icon1.svg" alt="#" class="description-img">
+                    <img src="/img/desc-icon1.svg" alt="#">
                     <div class="description__text">
-                        <h2 class="description__title">БЫСТРО</h2>
-                        <p class="description__span">Мы делаем свою работу быстро!
-                            Два часа пролетят незаметнои вы — счастливый
-                            обладатель стильной стрижки-минутки</p>
+                        <h2 class="description__title">FAST</h2>
+                        <p class="description__span">We do our work quickly!
+                            Two hours will fly by unnoticed, you are happy
+                            owner of a stylish short haircut</p>
                     </div>
                 </div>
                 <div class="description__wrapper-foot">
-                    <img src="/img/desc-icon2.svg" alt="#" class="description-img">
+                    <img src="/img/desc-icon2.svg" alt="#">
                     <div class="description__text">
-                        <h2 class="description__title">КРУТО</h2>
-                        <p class="description__span">Забудьте, как вы стриглись раньше.
-                            Мы сделаем из васзвезду футбола или кино.
-                            Во всяком случае внешне.</p>
+                        <h2 class="description__title">COOL</h2>
+                        <p class="description__span">Forget how you cut your hair before.
+                            We will make you a football or movie star.
+                            At least externally.</p>
                     </div>
                 </div>
                 <div class="description__wrapper-foot">
-                    <img src="/img/desc-icon3.svg" alt="#" class="description-img">
+                    <img src="/img/desc-icon3.svg" alt="#">
                     <div class="description-text">
-                        <h2 class="description__title">ДОРОГО</h2>
-                        <p class="description__span">Наши мастера — профессионалы своего
-                            дела не могут стоить дёшево
-                            К тому же, разве цена не даёт определённый статус?</p>
+                        <h2 class="description__title">EXPENSIVE</h2>
+                        <p class="description__span">Our masters are professionals in their field
+                            things can't be cheap
+                            Besides, doesn't price give a certain status??</p>
                     </div>
                 </div>
             </div>
@@ -96,16 +107,159 @@
     </main>
 
     <div class="news">
+        <div class="triangle"></div>
         <div class="container">
-            <div class="news__title">
-                <h1 class="news__title-text">НОВОСТИ И АКЦИИ</h1>
-                <button class="news-button">ПОКАЗАТЬ ВСЕ</button>
+            <div class="news__inner">
+                <div class="news__title">
+                    <h1 class="news__title-text">NEWS AND PROMOTIONS</h1>
+                    <button class="news-button">SHOW ALL</button>
+                </div>
+
+                <div class="news__block">
+                    <div class="news__item">
+                        <div class="news__item-block">
+                            <div class="news__triangle"></div>
+                            <div class="news__number">
+                                <div class="news__day">29</div>
+                                <div class="news__month">SEPT</div>
+                            </div>
+                        </div>
+                        <div class="news__text">
+                            We finally got Jagermeister! Now you can skip
+                            a glass while cutting.
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-block">
+                            <div class="news__triangle"></div>
+                            <div class="news__number">
+                                <div class="news__day">19</div>
+                                <div class="news__month">SEPT</div>
+                            </div>
+                        </div>
+                        <div class="news__text">
+                            We have a new addition to our team, Boris “Razor” Strigunets.
+                            our orderly ranks. Hurry up to sign up!
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-block">
+                            <div class="news__triangle"></div>
+                            <div class="news__number">
+                                <div class="news__day">9</div>
+                                <div class="news__month">SEPT</div>
+                            </div>
+                        </div>
+                        <div class="news__text">
+                            Everything is getting more expensive, but our haircuts are not! How so? Come and get a
+                            haircut
+                            and find out what the catch is!
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="news__item"></div>
+
         </div>
     </div>
 
+    <div class="reviews">
+        <div class="container">
+            <div class="reviews__item">
+                <div class="reviews__title">
+                    <h1 class="reviews__title-text">REVIEWS ABOUT US</h1>
+                    <button class="reviews-button">LEAVE YOURS</button>
+                </div>
+                <div class="about__slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider__block">
+                                    <div class="slider__avatar">
+                                        <img src="/img/slider1.jpg" alt="Slider" class="slider__img">
+                                    </div>
+                                    <div class="reviews__slider">
+                                        <h2 class="reviews-slider__title">Adlan Siriev</h2>
+                                        <p class="reviews-slider__subtitle">
+                                            At uni I was teased about my hair, so I finally decided to come to
+                                            barbershop
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__block">
+                                    <div class="slider__avatar">
+                                        <img src="/img/slider2.jpg" alt="Slider" class="slider__img">
+                                    </div>
+                                    <div class="reviews__slider">
+                                        <h2 class="reviews-slider__title">Izripov Yusup</h2>
+                                        <p class="reviews-slider__subtitle">
+                                            I always wanted my beard to be longer than Adlan's, so I came
+                                            do the styling.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__block">
+                                    <div class="slider__avatar">
+                                        <img src="/img/slider3.jpg" alt="Slider" class="slider__img">
+                                    </div>
+                                    <div class="reviews__slider">
+                                        <h2 class="reviews-slider__title">Didishov Magomed</h2>
+                                        <p class="reviews-slider__subtitle">
+                                            They didn't ask me at all. I was passing by and someone dragged me here.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <img src="/img/left arrow.svg" alt="">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="/img/right arrow.svg" alt="">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__item">
+                <div class="footer__number">
+                    <h2 class="footer__title">Barbershop Borodinsky</h2>
+                    <p class="footer__street">
+                        c. London, 1-65 Pagehurst Rd
+                    </p>
+                    <div class="footer__phone">
+                        <a href="+442087771897"> num:+442087771897</a>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <h2 class="footer__social-media">Let's shave</h2>
+                    <div class="footer__social-brand">
+                        <a class="footer__vk" href="#"></a>
+                        <a class="footer__fb" href="#"></a>
+                        <a class="footer__in" href="#"></a>
+                    </div>
+                </div>
+                <div class="footer__job">
+                    <h2 class="footer__jober">Developed:</h2>
+                    <div class="footer__creator">Ibra-Bay</div>
+                </div>
+            </div>
+            <div class="footer__social-tablet">
+                <a class="footer__vk-tablet" href="#"></a>
+                <a class="footer__fb-tablet" href="#"></a>
+                <a class="footer__in-tablet" href="#"></a>
+            </div>
+        </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
